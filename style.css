@@ -69,3 +69,26 @@ header p{
 .info-txt span{
     color: #5372F0;
 }
+
+@media (max-width: 584px){
+    .wrapper{
+        width: 90%;
+    }
+    header h1{
+        font-size: 24px;
+    }
+    header p{
+        font-size: 16px;
+    }
+    .inputs input{
+        height: 55px;
+        font-size: 18px;
+    }
+    .inputs button{
+        height: 52px;
+        font-size: 16px;
+    }
+    .info-txt{
+        font-size: 18px;
+    }
+}
