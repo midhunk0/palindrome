@@ -7,6 +7,8 @@ This is a Palindrome Checker website that allows users to input text and check i
 - Simple and intuitive interface
 - Instant palindrome checking
 - Built with HTML, CSS, and JavaScript
+- ![image](https://github.com/user-attachments/assets/0e3b680c-574c-4b8a-8af0-b40fa5cfbc37)
+
 
 ## How to Use
 
