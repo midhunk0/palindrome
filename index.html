@@ -2,21 +2,37 @@
     <head>
         <meta charset="utf-8">
         <title>Palindrome Checker in JavaScript</title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <h1>Palindrome Checker</h1>
-                <p>A palindrome is a phrase or word that reads the same backwards as forwards; eg:level, refer, ..</p>
-            </header>
-            <div class="inputs">
-                <input type="text" placeholder="Enter text or number">
-                <button>Check Palindrome</button>
+        <h1 class="heading">Palindrome Checker</h1>
+        <p>A palindrome reads the same backward and forward, even after spaces and symbols are ignored.</p>
+        <main class="wrapper">
+            <form class="inputs" autocomplete="off">
+                <label for="palindrome-input">Text or number</label>
+                <input id="palindrome-input" type="text" placeholder="Never odd or even" aria-describedby="result">
+
+                <div class="actions">
+                    <button class="button check-button" type="submit" disabled>
+                        <span class="button-icon">✓</span>
+                        Check
+                    </button>
+                    <button class="button reset-button" type="button" aria-label="Clear input">
+                        <span class="button-icon">↻</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="example-row" aria-label="Example palindromes">
+                <button class="example-chip" type="button" data-example="level">level</button>
+                <button class="example-chip" type="button" data-example="Never odd or even">Never odd</button>
+                <button class="example-chip" type="button" data-example="A man, a plan, a canal: Panama!">Panama</button>
             </div>
-            <p class="info-txt"></p>
-        </div>
+
+            <p id="result" class="info-txt status-card" aria-live="polite"></p>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>
